@@ -3,11 +3,11 @@ from llama_cpp import Llama
 
 # Load BioMistral-7B model with Metal (GPU) support
 llm = Llama(
-    model_path="./models/ggml-model-Q4_K_M.gguf",  # adjust path if needed
+    model_path="./models/ggml-model-Q4_K_M.gguf",  
     n_ctx=2048,
-    n_threads=8,      # you have 8 logical cores on M2
-    n_gpu_layers=100, # enables GPU acceleration (use 100+ to fully offload)
-    verbose=True      # optional: prints Metal logs to terminal
+    n_threads=8,      
+    n_gpu_layers=100, # enables GPU acceleration 
+    verbose=True      # prints Metal logs to terminal
 )
 
 app = Flask(__name__)

@@ -6,4 +6,4 @@ path = hf_hub_download(
     local_dir="./models"
 )
 
-print(f"✅ Downloaded model to: {path}")
+print(f" Downloaded model to: {path}")
